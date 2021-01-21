@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Test</title>
+    <link href="static/style.css" rel="stylesheet">
+    <script type="text/javascript" src="static/quizs.js"></script>
+    <ul class = "menu">
+        <div style="margin-left: 700px"><strong><h1>Тест на знание фильмов</h1></strong></div>
+        <a href="/logout">Выйти</a> 
+    </ul>
+</head>
+<body>
+<form name="quiz" style="margin-left: 600px" id="quiz">
+    <div>
+        <p>1. Какой актер сыграл Локи в </br>фильмах "Тор" и "Тор 2"?</p>
+        <p><input type="radio" name="question1" value="0"> 1. Крис Хемсворт</p>
+        <p><input type="radio" name="question1" value="Hiddlstone"> 2. Том Хиддлстон</p>
+        <p><input type="radio" name="question1" value="0"> 3. Стеллан Скарсгард</p>
+        <p><input type="radio" name="question1" value="0"> 4. Леони Хемсворт</p>
+    </div>
+    <div>
+        <p>2. Из какого фильма эта цитата: "Они научили меня ценить верность... </br> И никогда не забывать о тех, кого любишь".</p>
+        <p><input type="radio" name="question2" value="0"> 1. Зеленая миля</p>
+        <p><input type="radio" name="question2" value="0"> 2. 1+1</p>
+        <p><input type="radio" name="question2" value="0"> 3. Турист</p>
+        <p><input type="radio" name="question2" value="Hatiko"> 4. Хатико</p>
+    </div>
+    <div>
+        <p>3. У Дэви Джонса из фильма “Пираты Карибского моря” </br> вместо левой руки крабовая клешня. </br> А что у него вместо правой руки?</p>
+        <p><input type="radio" name="question3" value="Shupalce"> 1. Щупальце</p>
+        <p><input type="radio" name="question3" value="0"> 2. Крюк</p>
+        <p><input type="radio" name="question3" value="0"> 3. Обычная рука</p>
+        <p><input type="radio" name="question3" value="0"> 4. У него нет правой руки</p>
+    </div>
+    <div>
+        <p>4. Из каких трех принцесс Лорд Фаркуад</br> выбирал себе невесту в мультфильме "Шрек"?</p>
+        <p><input type="radio" name="question4" value="0"> 1. Фиона, Аврора и Рапунцель</p>
+        <p><input type="radio" name="question4" value="0"> 2. Фиона, Ариэль и Белль</p>
+        <p><input type="radio" name="question4" value="0"> 3. Фиона, Спящая Красавица и Золушка</p>
+        <p><input type="radio" name="question4" value="Fiona"> 4. Фиона, Белоснежка и Золушка</p>
+    </div>
+    <div>
+        <p>5. Что попросил Эдмунд из фильма "Хроники Нарнии"</br> у Белой Колдуньи при встрече?</p>
+        <p><input type="radio" name="question5" value="0"> 1. Одеяло</p>
+        <p><input type="radio" name="question5" value="0"> 2. Горячий шоколад</p>
+        <p><input type="radio" name="question5" value="Rahat"> 3. Рахат-лукум</p>
+        <p><input type="radio" name="question5" value="0"> 4. Конфеты</p>
+    </div>
+    <div>
+        <p>6. Когда Ллойд из фильма "Тупой и еще тупее" </br> спрашивает Мэри, есть ли шанс, что они будут вместе, </br> что она отвечает?</p>
+        <p><input type="radio" name="question6" value="Million"> 1. 1 на миллион</p>
+        <p><input type="radio" name="question6" value="0"> 2. 50 на 50</p>
+        <p><input type="radio" name="question6" value="0"> 3. 1 на 1000</p>
+        <p><input type="radio" name="question6" value="0"> 4. 1 на 100</p>
+    </div>
+    <div>
+        <p>7. Как зовут Морскую черепаху, с которой подружился </br> Марлин в мульфильме "В поисках Нэмо"?</p>
+        <p><input type="radio" name="question7" value="0"> 1. Уилл</p>
+        <p><input type="radio" name="question7" value="Krush"> 2. Краш</p>
+        <p><input type="radio" name="question7" value="0"> 3. Джеймс</p>
+        <p><input type="radio" name="question7" value="0"> 4. Джилл</p>
+    </div>
+    <div>
+        <p>8. Что доктор Эммет Браун из фильма </br> "Назад в будущее" попросил Марти принести к торговому центру </br> для своего первого эксперимента с машиной времени?</p>
+        <p><input type="radio" name="question8" value="Video"> 1. Видеокамеру</p>
+        <p><input type="radio" name="question8" value="0"> 2. Радиационные костюмы</p>
+        <p><input type="radio" name="question8" value="0"> 3. Плутоний</p>
+        <p><input type="radio" name="question8" value="0"> 4. Часы</p>
+    </div>
+    <div>
+        <p>9. Как звали брата Джейка Салли в фильме "Аватар"?</p>
+        <p><input type="radio" name="question9" value="0"> 1. Джо</p>
+        <p><input type="radio" name="question9" value="0"> 2. Сэм</p>
+        <p><input type="radio" name="question9" value="Tom"> 3. Том</p>
+        <p><input type="radio" name="question9" value="0"> 4. Билл</p>
+    </div>
+
+    <input type="button" name="" value="Завершить" onclick="check()">
+</form>
+<p id="result"></p>
+</body>
+</html>
